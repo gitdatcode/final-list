@@ -5,4 +5,3 @@
 * [node](http://nodejs.org)
 * [express](http://expressjs.com)
 * [vue](http://vuejs.org)
-* 

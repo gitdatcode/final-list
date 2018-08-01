@@ -1,0 +1,26 @@
+{
+  "name": "final-list",
+  "version": "1.0.0",
+  "description": "vote on your faves!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitdatcode/final-list.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "DATCODE, INC.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitdatcode/final-list/issues"
+  },
+  "homepage": "https://github.com/gitdatcode/final-list#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "vue": "^2.5.16"
+  }
+}
