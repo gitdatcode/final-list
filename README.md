@@ -1,15 +1,23 @@
-# final-list
+# THE FINAL LIST
+> A DATCODE Production
 
-> A Vue.js project
-
-## Build Setup
+## Getting Up And Running
 
 ``` bash
-# install dependencies
+# clone this repo
+git clone https://github.com/gitdatcode/final-list.git
+cd final-list
+
+# install client dependencies
 npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
+
+# install server dependencies
+cd server
+npm intall
+npm start
 
 # build for production with minification
 npm run build
@@ -18,4 +26,4 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+If you get stuck for more than ten minutes, join the project channel in the DATCODE slack: #__project_final-list and ask for help. We got your back!
