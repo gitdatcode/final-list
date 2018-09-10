@@ -19,6 +19,8 @@ cd server
 npm intall
 npm start
 
+# express server will be running at localhost:8081
+
 # build for production with minification
 npm run build
 
