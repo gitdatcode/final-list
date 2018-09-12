@@ -1,0 +1,85 @@
+/* import the Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* variables */
+:root {
+  --color-black: #000000;
+  --color-white: #FDFDFD;
+  --color-blue: #00E0FF;
+  --color-confirm: #00EBA4;
+  --color-deny: #EB0038;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  /* container takes full width and height of the viewport */
+  width: 100vw;
+  height: 100vh; 
+
+  /* CSS Grid properties */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr 1fr;
+  /* grid is split into four areas */
+  grid-template-areas: 
+    "header header header"
+    "content content content"
+    "progress progress progress"
+    "footer footer footer";
+}
+
+/* classes for the grid areas */
+.content {
+  padding: 0 auto;
+  grid-area: content;
+  justify-self: center;
+  align-self: center;
+}
+
+.progress {
+  padding: 0 auto;
+  grid-area: progress;
+  justify-self: center;
+  align-self: center;
+}
+
+.header {
+  padding: 0 auto;
+  grid-area: header;
+  justify-self: right;
+  align-self: center;
+}
+
+.footer {
+  padding: 0 auto;
+  grid-area: footer;
+  justify-self: right;
+  align-self: center;
+}
+
+/* actionable elements styling */
+.btn {
+  text-align: center; 
+  padding: 15px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn-confirm {
+  background-color: var(--color-confirm);
+  color: var(--color-black);
+}
+
+.btn-deny {
+  background-color: var(--color-deny);
+  color: var(--color-white);
+}
