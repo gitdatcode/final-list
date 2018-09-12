@@ -4,7 +4,12 @@
     <div class="title"><h1>THE FINAL LIST</h1></div>
     <p>THE DEFINITIVE COLLECTION OF BESTS, WORSTS, AND GREATS<br>
     (THESE LISTS ARE NOT FINAL)</p>
-    <button type="button" class="btn btn-confirm">START VOTING!</button>
+    <router-link
+      class="btn btn-confirm"
+      :to="{ name: 'movies' }"
+    >
+      START VOTING
+    </router-link>
   </div>
 </div>
 </template>
@@ -28,5 +33,9 @@ p {
 
 @media screen and (max-width: 414px) {
   .title h1 { font-size: 3em; }
+}
+
+a.btn.btn-confirm {
+  text-decoration: none;
 }
 </style>
