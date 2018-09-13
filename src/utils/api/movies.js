@@ -1,8 +1,11 @@
 import axios from 'axios'
 
-export const getMovies = () => {
-  return axios.get(`/movies`)
-    .then(response => response)
+export default function getMovies () {
+  return axios.get('/movies')
+    .then(response => {
+      console.log(response)
+      return response
+    })
     .catch((error) => {
       console.log(error)
     })
