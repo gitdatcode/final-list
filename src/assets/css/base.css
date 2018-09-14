@@ -48,10 +48,11 @@ body {
   grid-area: nav;
   justify-self: right;
 }
-
 .nav a{ color: var(--color-white); text-decoration: none; }
 .nav a:hover { color: var(--color-blue); }
-.signature a { color: var(--color-blue); }
+.nav-link { padding: 0 20px; }
+
+.signature a { color: var(--color-blue); text-decoration: none; }
 
 .footer {
   margin: 10px;
