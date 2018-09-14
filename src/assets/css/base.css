@@ -29,9 +29,8 @@ body {
   grid-template-rows: 1fr 10fr 1fr 1fr;
   /* grid is split into four areas */
   grid-template-areas: 
-    "header header header"
+    "nav nav nav"
     "content content content"
-    "progress progress progress"
     "footer footer footer";
 }
 
@@ -43,25 +42,24 @@ body {
   align-self: center;
 }
 
-.progress {
-  padding: 0 auto;
-  grid-area: progress;
-  justify-self: center;
-  align-self: center;
+.nav {
+  margin: 10px;
+  padding: 20px;
+  grid-area: nav;
+  justify-self: right;
 }
 
-.header {
-  padding: 0 auto;
-  grid-area: header;
-  justify-self: right;
-  align-self: center;
-}
+.nav a{ color: var(--color-white); text-decoration: none; }
+.nav a:hover { color: var(--color-blue); }
+.signature a { color: var(--color-blue); }
 
 .footer {
-  padding: 0 auto;
+  margin: 10px;
+  padding: 20px;
   grid-area: footer;
-  justify-self: right;
-  align-self: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* actionable elements styling */
