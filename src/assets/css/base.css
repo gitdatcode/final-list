@@ -26,12 +26,11 @@ body {
   /* CSS Grid properties */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 10fr 1fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
   /* grid is split into four areas */
   grid-template-areas: 
-    "header header header"
+    "navbar navbar navbar"
     "content content content"
-    "progress progress progress"
     "footer footer footer";
 }
 
@@ -43,26 +42,29 @@ body {
   align-self: center;
 }
 
-.progress {
-  padding: 0 auto;
-  grid-area: progress;
-  justify-self: center;
-  align-self: center;
-}
-
-.header {
-  padding: 0 auto;
-  grid-area: header;
+.nav {
+  margin: 10px;
+  padding: 20px;
+  grid-area: navbar;
   justify-self: right;
-  align-self: center;
 }
+.nav a{ color: var(--color-white); text-decoration: none; }
+.nav a:hover { color: var(--color-blue); }
+.nav-link { padding: 0 20px; }
+
+
 
 .footer {
-  padding: 0 auto;
+  color: gray;
+  margin: 10px;
+  padding: 20px;
   grid-area: footer;
-  justify-self: right;
-  align-self: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
+.footer a { color: gray; }
+
 
 /* actionable elements styling */
 .btn {
