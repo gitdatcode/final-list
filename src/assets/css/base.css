@@ -26,10 +26,10 @@ body {
   /* CSS Grid properties */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 10fr 1fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
   /* grid is split into four areas */
   grid-template-areas: 
-    "nav nav nav"
+    "navbar navbar navbar"
     "content content content"
     "footer footer footer";
 }
@@ -45,16 +45,17 @@ body {
 .nav {
   margin: 10px;
   padding: 20px;
-  grid-area: nav;
+  grid-area: navbar;
   justify-self: right;
 }
 .nav a{ color: var(--color-white); text-decoration: none; }
 .nav a:hover { color: var(--color-blue); }
 .nav-link { padding: 0 20px; }
 
-.signature a { color: var(--color-blue); text-decoration: none; }
+
 
 .footer {
+  color: gray;
   margin: 10px;
   padding: 20px;
   grid-area: footer;
@@ -62,6 +63,8 @@ body {
   left: 0;
   bottom: 0;
 }
+.footer a { color: gray; }
+
 
 /* actionable elements styling */
 .btn {

@@ -10,7 +10,7 @@
     <router-view/>
   </div>
   <div class="footer">
-    <div class="signature">a project by <a href='https://www.datcode.io'>DATCODE, INC.</a></div>
+    <div class="signature">a project by <a href='https://www.datcode.io' target="_blank">DATCODE, INC.</a> Check out the <a href="https://www.github.com/gitdatcode/final-list" target="_blank">source code</a>.</div>
   </div>
   </div>
 </template>
